@@ -520,14 +520,14 @@
     "category": "general"
   },
   {
-    "title": "Saturday test",
+    "title": "Test entry",
     "start": "2026-06-20",
     "end": "2026-06-20",
-    "description": "This is a test.",
+    "description": "Test entry",
     "status": "Approved",
-    "network": "TestNet",
-    "type": "Minor Upgrade",
-    "category": "weekly-upgrade"
+    "network": "MainNet",
+    "type": "Daml Model Versions",
+    "category": "general"
   },
   {
     "title": "Minimum Splice Versions for Validators",
