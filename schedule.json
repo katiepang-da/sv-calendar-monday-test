@@ -5,8 +5,8 @@
     "end": "2026-06-18",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
-    "type": "",
+    "network": "",
+    "type": "Cut Splice Release",
     "category": "release"
   },
   {
@@ -15,7 +15,7 @@
     "end": "2026-06-22",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "Minor Upgrade",
     "category": "weekly-upgrade"
   },
@@ -40,13 +40,33 @@
     "category": "weekly-upgrade"
   },
   {
-    "title": "Minimum Splice Versions for Validators",
+    "title": "DevNet: Minimum Splice Versions 0.6.7",
     "start": "2026-06-22",
     "end": "2026-06-22",
-    "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.5",
+    "description": "",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "TestNet: Minimum Splice Versions 0.6.7",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "MainNet: Minimum Splice Versions 0.6.5",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Versions",
     "category": "minimum-version"
   },
   {
@@ -55,7 +75,7 @@
     "end": "2026-06-23",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "Configuration Change",
     "category": "general"
   },
@@ -70,13 +90,33 @@
     "category": "general"
   },
   {
-    "title": "Minimum Splice.dar Versions",
+    "title": "DevNet: Minimum Splice.dar Versions",
     "start": "2026-06-23",
     "end": "2026-06-23",
-    "description": "DevNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "TestNet: Minimum Splice.dar Versions",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "MainNet:Minimum Splice.dar Versions",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "amulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Dar versions",
     "category": "minimum-version"
   },
   {
@@ -85,8 +125,8 @@
     "end": "2026-06-25",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
-    "type": "",
+    "network": "",
+    "type": "Cut Splice Release",
     "category": "release"
   },
   {
@@ -96,8 +136,8 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
-    "category": "general"
+    "type": "Major Upgrade",
+    "category": "weekly-upgrade"
   },
   {
     "title": "MainNet LSU pv34->pv35, validators must upgrade to >= 0.6.5 before the LSU",
@@ -106,7 +146,7 @@
     "description": "Topology freeze starts June 26th, 24 hours before LSU",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Major Upgrade",
     "category": "weekly-upgrade"
   },
   {
@@ -115,7 +155,7 @@
     "end": "2026-06-29",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -145,7 +185,7 @@
     "end": "2026-06-29",
     "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "Minimum Versions",
+    "network": "",
     "type": "",
     "category": "minimum-version"
   },
@@ -185,7 +225,7 @@
     "end": "2026-07-02",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
+    "network": "",
     "type": "",
     "category": "release"
   },
@@ -195,7 +235,7 @@
     "end": "2026-07-06",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -235,7 +275,7 @@
     "end": "2026-07-07",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "general"
   },
@@ -245,7 +285,7 @@
     "end": "2026-07-07",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "general"
   },
@@ -265,7 +305,7 @@
     "end": "2026-07-08 14:00",
     "description": "Topology freeze starts July 7th, 24 hours before LSU",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "general"
   },
@@ -275,7 +315,7 @@
     "end": "2026-07-09",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
+    "network": "",
     "type": "",
     "category": "release"
   },
@@ -285,7 +325,7 @@
     "end": "2026-07-13",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -315,7 +355,7 @@
     "end": "2026-07-16",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
+    "network": "",
     "type": "",
     "category": "release"
   },
@@ -325,7 +365,7 @@
     "end": "2026-07-20",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -395,7 +435,7 @@
     "end": "2026-07-23",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
+    "network": "",
     "type": "",
     "category": "release"
   },
@@ -405,7 +445,7 @@
     "end": "2026-07-27",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -455,7 +495,7 @@
     "end": "2026-07-30",
     "description": "",
     "status": "Approved",
-    "network": "Cut Splice",
+    "network": "",
     "type": "",
     "category": "release"
   },
@@ -478,6 +518,16 @@
     "network": "MainNet",
     "type": "",
     "category": "general"
+  },
+  {
+    "title": "Saturday test",
+    "start": "2026-06-20",
+    "end": "2026-06-20",
+    "description": "This is a test.",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minor Upgrade",
+    "category": "weekly-upgrade"
   },
   {
     "title": "Minimum Splice Versions for Validators",
@@ -515,7 +565,7 @@
     "end": "2026-06-15",
     "description": "",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "weekly-upgrade"
   },
@@ -525,7 +575,7 @@
     "end": "2026-06-16",
     "description": "required for CIP-104",
     "status": "Approved",
-    "network": "Dev Net",
+    "network": "DevNet",
     "type": "",
     "category": "general"
   },
