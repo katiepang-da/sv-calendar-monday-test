@@ -418,7 +418,7 @@
       const meta = document.createElement('div');
       meta.className = 'meta-row';
 
-      [event.network, event.type, event.status].filter(Boolean).forEach(value => {
+      [event.network, event.type].filter(Boolean).forEach(value => {
         const tag = document.createElement('span');
         tag.className = 'tag';
         tag.textContent = value;
