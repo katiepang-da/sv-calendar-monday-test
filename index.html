@@ -1,1 +1,567 @@
-<h1>SV Calendar Monday Test</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>SV Operations Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --bg: #03030a;
+      --card: #120b25;
+      --purple: #7c4dff;
+      --purple-soft: #c99cff;
+      --yellow: #f3ea4e;
+      --text: #f7f4ff;
+      --muted: #cdb8ef;
+      --border: #7c4dff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(124,77,255,0.22), transparent 35%),
+        linear-gradient(180deg, #03030a 0%, #070711 100%);
+      color: var(--text);
+      padding: 32px 24px;
+    }
+
+    .page {
+      max-width: 1450px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      border: 1px solid var(--purple);
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      background: linear-gradient(145deg, #1b1036, #080812);
+      box-shadow: 0 0 28px rgba(124,77,255,0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(27,16,54,0.95), rgba(8,8,18,0.95));
+      padding: 22px;
+      box-shadow: 0 0 32px rgba(124,77,255,0.16);
+      margin-bottom: 24px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: auto auto auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    button, input, .button {
+      background: #0c0a18;
+      border: 1px solid rgba(201,156,255,0.45);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 15px;
+    }
+
+    button { cursor: pointer; }
+
+    input::placeholder { color: #9b8bb7; }
+
+    .button {
+      color: var(--yellow);
+      border-color: var(--yellow);
+      text-decoration: none;
+      white-space: nowrap;
+      box-shadow: 0 0 20px rgba(243,234,78,0.18);
+    }
+
+    .month-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      margin: 24px 0;
+    }
+
+    .weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .weekday {
+      color: var(--yellow);
+      font-weight: 800;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+      width: 100%;
+    }
+
+    .day {
+      height: 260px;
+      border: 1px solid rgba(124,77,255,0.7);
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at top left, rgba(124,77,255,0.18), transparent 45%),
+        linear-gradient(135deg, #1a0f34, #070812);
+      padding: 12px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .day.outside { opacity: 0.35; }
+
+    .day.today {
+      border-color: var(--yellow);
+      box-shadow: 0 0 18px rgba(243,234,78,0.25);
+    }
+
+    .day-number {
+      font-weight: 800;
+      color: var(--purple-soft);
+      margin-bottom: 8px;
+    }
+
+    .event {
+      border: 1px solid rgba(201,156,255,0.35);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      overflow-wrap: break-word;
+      background: rgba(124,77,255,0.22);
+    }
+
+    .event-title {
+      font-weight: 800;
+      text-decoration: underline;
+      margin-bottom: 8px;
+    }
+
+    .event-description {
+      margin-top: 4px;
+    }
+
+    .event-section {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(243,234,78,0.25);
+    }
+
+    .event-section:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .event-section-title {
+      color: var(--yellow);
+      font-weight: 800;
+      text-decoration: underline;
+      margin-bottom: 4px;
+    }
+
+    .event-line {
+      margin: 1px 0;
+    }
+
+    .event-badge {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .event.weekly-upgrade {
+      background: rgba(243,234,78,0.14);
+      border-left: 4px solid var(--yellow);
+    }
+
+    .event.weekly-upgrade .event-badge {
+      color: var(--yellow);
+    }
+
+    .event.minimum-version {
+      background: rgba(243,234,78,0.18);
+      border-left: 4px solid var(--yellow);
+    }
+
+    .event.minimum-version .event-badge {
+      color: var(--yellow);
+    }
+
+    .event.general {
+      background: rgba(124,77,255,0.22);
+      border-left: 4px solid rgba(201,156,255,0.45);
+    }
+
+    .event.general .event-badge {
+      color: var(--purple-soft);
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .controls {
+        grid-template-columns: 1fr;
+      }
+
+      .calendar, .weekdays {
+        gap: 8px;
+      }
+
+      .day {
+        min-height: 110px;
+        padding: 8px;
+      }
+
+      .event {
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 12px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .logo {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+      }
+
+      .panel {
+        padding: 16px;
+      }
+
+      .calendar,
+      .weekdays {
+        display: block;
+      }
+
+      .weekdays {
+        display: none;
+      }
+
+      .day {
+        min-height: auto;
+        margin-bottom: 14px;
+        padding: 14px;
+      }
+
+      .day.outside {
+        display: none;
+      }
+
+      .day-number {
+        font-size: 20px;
+        color: var(--yellow);
+        border-bottom: 1px solid rgba(201,156,255,0.25);
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+      }
+
+      .event {
+        font-size: 14px;
+        line-height: 1.45;
+        padding: 10px;
+      }
+
+      .meta {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="logo">📅</div>
+        <div>
+          <h1>SV Operations Schedule</h1>
+          <div class="subtitle">Public monthly calendar generated from the source doc.</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <button onclick="previousMonth()">← Previous</button>
+        <button onclick="goToday()">Today</button>
+        <button onclick="nextMonth()">Next →</button>
+        <input id="search" placeholder="Search events..." />
+        <a class="button" href="./schedule.ics">Subscribe / Download ICS</a>
+      </div>
+    </section>
+
+    <div class="month-title" id="monthTitle"></div>
+
+    <div class="weekdays">
+      <div class="weekday">MON</div>
+      <div class="weekday">TUE</div>
+      <div class="weekday">WED</div>
+      <div class="weekday">THU</div>
+      <div class="weekday">FRI</div>
+      <div class="weekday">SAT</div>
+      <div class="weekday">SUN</div>
+    </div>
+
+    <main class="calendar" id="calendar"></main>
+
+    <div class="meta">
+      <div id="updated">↻ Loading schedule...</div>
+      <div>● Auto-updates every 12 hours</div>
+    </div>
+
+    <footer>
+      Questions or issues? Contact the operations team.
+    </footer>
+  </div>
+
+  <script>
+    let allEvents = [];
+    let currentDate = new Date();
+
+    async function loadSchedule() {
+      const response = await fetch('./schedule.json?cache=' + Date.now());
+      allEvents = await response.json();
+
+      document.getElementById('updated').textContent =
+        '↻ Last loaded: ' + new Date().toLocaleString();
+
+      renderCalendar();
+    }
+
+    function dateKey(date) {
+      return date.getFullYear() + '-' +
+        String(date.getMonth() + 1).padStart(2, '0') + '-' +
+        String(date.getDate()).padStart(2, '0');
+    }
+
+    function appendFormattedDescription(parent, description) {
+      const container = document.createElement('div');
+      container.className = 'event-description';
+
+      const lines = String(description || '')
+        .split(/\r?\n|\r/)
+        .map(line => line.trim())
+        .filter(Boolean);
+
+      let currentSection = null;
+
+      lines.forEach(line => {
+        const isNetworkHeader =
+          /^DevNet:$/i.test(line) ||
+          /^TestNet:$/i.test(line) ||
+          /^MainNet:$/i.test(line);
+
+        if (isNetworkHeader) {
+          currentSection = document.createElement('div');
+          currentSection.className = 'event-section';
+
+          const title = document.createElement('div');
+          title.className = 'event-section-title';
+          title.textContent = line;
+
+          currentSection.appendChild(title);
+          container.appendChild(currentSection);
+          return;
+        }
+
+        const lineDiv = document.createElement('div');
+        lineDiv.className = 'event-line';
+        lineDiv.textContent = line;
+
+        if (currentSection) {
+          currentSection.appendChild(lineDiv);
+        } else {
+          container.appendChild(lineDiv);
+        }
+      });
+
+      parent.appendChild(container);
+    }
+
+    function renderCalendar() {
+      const calendar = document.getElementById('calendar');
+      const search = document.getElementById('search').value.toLowerCase();
+
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+
+      document.getElementById('monthTitle').textContent =
+        currentDate.toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+
+      const firstDay = new Date(year, month, 1);
+
+      let mondayStartOffset = firstDay.getDay() - 1;
+      if (mondayStartOffset < 0) mondayStartOffset = 6;
+
+      const gridStart = new Date(firstDay);
+      gridStart.setDate(firstDay.getDate() - mondayStartOffset);
+
+      calendar.innerHTML = '';
+
+      for (let i = 0; i < 35; i++) {
+        const dayDate = new Date(gridStart);
+        dayDate.setDate(gridStart.getDate() + i);
+
+        const key = dateKey(dayDate);
+        const todayKey = dateKey(new Date());
+
+        const dayEvents = allEvents.filter(event => {
+          const searchableText = (
+            String(event.title || '') + ' ' +
+            String(event.description || '') + ' ' +
+            String(event.category || '')
+          ).toLowerCase();
+
+          const start = String(event.start || '');
+          return start === key && searchableText.includes(search);
+        });
+
+        const day = document.createElement('div');
+        day.className = 'day';
+
+        if (dayDate.getMonth() !== month) {
+          day.classList.add('outside');
+        }
+
+        if (key === todayKey) {
+          day.classList.add('today');
+        }
+
+        const dayLabel = window.innerWidth <= 700
+          ? dayDate.toLocaleDateString('en-US', {
+              weekday: 'long',
+              month: 'long',
+              day: 'numeric'
+            })
+          : dayDate.getDate();
+
+        day.innerHTML = `<div class="day-number">${dayLabel}</div>`;
+
+        dayEvents.forEach(event => {
+          const eventDiv = document.createElement('div');
+          eventDiv.className = `event ${event.category || 'general'}`;
+
+          const badge = document.createElement('div');
+          badge.className = 'event-badge';
+
+          if (event.category === 'weekly-upgrade') {
+            badge.textContent = 'Weekly Splice Upgrade';
+          } else if (event.category === 'minimum-version') {
+            badge.textContent = 'Minimum Splice Versions';
+          } else {
+            badge.textContent = 'Event';
+          }
+
+          const title = document.createElement('div');
+          title.className = 'event-title';
+          title.textContent = event.title;
+
+          eventDiv.appendChild(badge);
+          eventDiv.appendChild(title);
+
+          if (event.description) {
+            appendFormattedDescription(eventDiv, event.description);
+          }
+
+          day.appendChild(eventDiv);
+        });
+
+        calendar.appendChild(day);
+      }
+    }
+
+    function previousMonth() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    }
+
+    function goToday() {
+      currentDate = new Date();
+      renderCalendar();
+    }
+
+    document.getElementById('search').addEventListener('input', renderCalendar);
+
+    loadSchedule();
+  </script>
+</body>
+</html>
