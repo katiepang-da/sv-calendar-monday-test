@@ -510,16 +510,6 @@
     "category": "general"
   },
   {
-    "title": "Test entry",
-    "start": "2026-06-20",
-    "end": "2026-06-20",
-    "description": "Test entry",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Daml Model Versions",
-    "category": "general"
-  },
-  {
     "title": "Minimum Splice Versions for Validators",
     "start": "2026-06-15",
     "end": "2026-06-15",
