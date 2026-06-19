@@ -1,15 +1,5 @@
 [
   {
-    "title": "Cut splice release 0.6.9",
-    "start": "2026-06-18",
-    "end": "2026-06-18",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
-    "category": "release"
-  },
-  {
     "title": "DevNet upgrades to Splice 0.6.9",
     "start": "2026-06-22",
     "end": "2026-06-22",
@@ -608,5 +598,15 @@
     "network": "TestNet",
     "type": "Major Upgrade",
     "category": "weekly-upgrade"
+  },
+  {
+    "title": "Cut splice release 0.6.9",
+    "start": "2026-06-18",
+    "end": "2026-06-18",
+    "description": "",
+    "status": "Approved",
+    "network": "",
+    "type": "Cut Splice Release",
+    "category": "release"
   }
 ]
