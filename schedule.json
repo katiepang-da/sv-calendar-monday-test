@@ -1,65 +1,5 @@
 [
   {
-    "title": "DevNet upgrades to Splice 0.6.9",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Minor Upgrade",
-    "category": "weekly-upgrade"
-  },
-  {
-    "title": "TestNet upgrades to Splice 0.6.8",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Minor Upgrade",
-    "category": "weekly-upgrade"
-  },
-  {
-    "title": "MainNet upgrades to Splice 0.6.7",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Minor Upgrade",
-    "category": "weekly-upgrade"
-  },
-  {
-    "title": "DevNet: Minimum Splice Versions 0.6.7",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Minimum Splice Versions",
-    "category": "minimum-version"
-  },
-  {
-    "title": "TestNet: Minimum Splice Versions 0.6.7",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Minimum Splice Versions",
-    "category": "minimum-version"
-  },
-  {
-    "title": "MainNet: Minimum Splice Versions 0.6.5",
-    "start": "2026-06-22",
-    "end": "2026-06-22",
-    "description": "",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Minimum Splice Versions",
-    "category": "minimum-version"
-  },
-  {
     "title": "DevNet: Dry-run of traffic-based app rewards begins",
     "start": "2026-06-23",
     "end": "2026-06-23",
@@ -598,5 +538,65 @@
     "network": "",
     "type": "Cut Splice Release",
     "category": "release"
+  },
+  {
+    "title": "DevNet upgrades to Splice 0.6.9",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Minor Upgrade",
+    "category": "weekly-upgrade"
+  },
+  {
+    "title": "TestNet: Minimum Splice Versions 0.6.7",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "MainNet: Minimum Splice Versions 0.6.5",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "DevNet: Minimum Splice Versions 0.6.7",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "minimum-version"
+  },
+  {
+    "title": "TestNet upgrades to Splice 0.6.8",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minor Upgrade",
+    "category": "weekly-upgrade"
+  },
+  {
+    "title": "MainNet upgrades to Splice 0.6.7",
+    "start": "2026-06-22",
+    "end": "2026-06-22",
+    "description": "",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minor Upgrade",
+    "category": "weekly-upgrade"
   }
 ]
