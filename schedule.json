@@ -66,7 +66,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Major Upgrade",
+    "type": "Protocol Upgrades (LSU)",
     "category": "weekly-upgrade"
   },
   {
@@ -76,7 +76,7 @@
     "description": "Topology freeze starts June 26th, 24 hours before LSU",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Major Upgrade",
+    "type": "Protocol Upgrades (LSU)",
     "category": "weekly-upgrade"
   },
   {
@@ -526,7 +526,7 @@
     "description": "validators must upgrade to >= 0.6.5 before the LSU. \n\nTopology freeze starts June 16th, 24 hours before LSU",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Major Upgrade",
+    "type": "Protocol Upgrades (LSU)",
     "category": "weekly-upgrade"
   },
   {
@@ -546,7 +546,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrade",
+    "type": "Minor Upgrades",
     "category": "weekly-upgrade"
   },
   {
@@ -586,7 +586,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrade",
+    "type": "Minor Upgrades",
     "category": "weekly-upgrade"
   },
   {
@@ -596,7 +596,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrade",
+    "type": "Minor Upgrades",
     "category": "weekly-upgrade"
   }
 ]
