@@ -9,11 +9,8 @@
     :root {
       --bg: #03030a;
       --panel: #10091f;
-      --card: #171026;
-      --card-2: #211438;
       --purple: #7c4dff;
       --purple-soft: #c99cff;
-      --yellow: #f3ea4e;
       --green: #43d17a;
       --text: #f7f4ff;
       --muted: #cdb8ef;
@@ -32,10 +29,7 @@
       padding: 28px 20px;
     }
 
-    .page {
-      max-width: 1500px;
-      margin: 0 auto;
-    }
+    .page { max-width: 1500px; margin: 0 auto; }
 
     header {
       display: flex;
@@ -45,16 +39,8 @@
       margin-bottom: 24px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 38px;
-      letter-spacing: -1px;
-    }
-
-    .subtitle {
-      margin-top: 8px;
-      color: var(--muted);
-    }
+    h1 { margin: 0; font-size: 38px; letter-spacing: -1px; }
+    .subtitle { margin-top: 8px; color: var(--muted); }
 
     .source-pill {
       border: 1px solid var(--green);
@@ -67,7 +53,7 @@
 
     .controls {
       display: grid;
-      grid-template-columns: auto auto auto 1fr;
+      grid-template-columns: auto auto auto 1fr 240px;
       gap: 10px;
       margin-bottom: 24px;
       padding: 18px;
@@ -76,7 +62,7 @@
       background: linear-gradient(135deg, rgba(27,16,54,0.95), rgba(8,8,18,0.95));
     }
 
-    button, input {
+    button, input, select {
       background: #0c0a18;
       border: 1px solid rgba(201,156,255,0.45);
       color: var(--text);
@@ -85,13 +71,8 @@
       font-size: 15px;
     }
 
-    button {
-      cursor: pointer;
-    }
-
-    input::placeholder {
-      color: #9b8bb7;
-    }
+    button { cursor: pointer; }
+    input::placeholder { color: #9b8bb7; }
 
     .month-title {
       text-align: center;
@@ -107,12 +88,10 @@
       gap: 10px;
     }
 
-    .weekdays {
-      margin-bottom: 10px;
-    }
+    .weekdays { margin-bottom: 10px; }
 
     .weekday {
-      color: var(--yellow);
+      color: var(--purple-soft);
       font-weight: 900;
       text-align: center;
       font-size: 14px;
@@ -131,13 +110,11 @@
       overflow-x: hidden;
     }
 
-    .day.outside {
-      opacity: 0.35;
-    }
+    .day.outside { opacity: 0.35; }
 
     .day.today {
-      border-color: var(--yellow);
-      box-shadow: 0 0 18px rgba(243,234,78,0.25);
+      border-color: var(--purple-soft);
+      box-shadow: 0 0 18px rgba(201,156,255,0.25);
     }
 
     .day-number {
@@ -155,35 +132,6 @@
       margin-bottom: 10px;
       font-size: 13px;
       line-height: 1.4;
-    }
-
-    .event.minimum-version {
-      background: rgba(243,234,78,0.16);
-      border-left-color: var(--yellow);
-    }
-
-    .event.weekly-upgrade {
-      background: rgba(243,234,78,0.12);
-      border-left-color: var(--yellow);
-    }
-
-    .event.release {
-      background: rgba(124,77,255,0.28);
-      border-left-color: var(--purple-soft);
-    }
-
-    .badge {
-      font-size: 10px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--purple-soft);
-      margin-bottom: 6px;
-    }
-
-    .minimum-version .badge,
-    .weekly-upgrade .badge {
-      color: var(--yellow);
     }
 
     .title {
@@ -207,18 +155,16 @@
       padding: 3px 7px;
     }
 
-    .description {
-      white-space: pre-wrap;
-    }
+    .description { white-space: pre-wrap; }
 
     .network-section {
       margin-top: 10px;
       padding-top: 8px;
-      border-top: 1px solid rgba(243,234,78,0.25);
+      border-top: 1px solid rgba(201,156,255,0.25);
     }
 
     .network-title {
-      color: var(--yellow);
+      color: var(--purple-soft);
       font-weight: 900;
       text-decoration: underline;
       margin-bottom: 4px;
@@ -233,40 +179,23 @@
     }
 
     @media (max-width: 900px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      header { flex-direction: column; align-items: flex-start; }
 
-      .controls {
-        grid-template-columns: 1fr;
-      }
+      .controls { grid-template-columns: 1fr; }
 
-      .day {
-        height: 240px;
-      }
+      .day { height: 240px; }
 
-      .event {
-        font-size: 11px;
-      }
+      .event { font-size: 11px; }
     }
 
     @media (max-width: 700px) {
-      body {
-        padding: 18px 12px;
-      }
+      body { padding: 18px 12px; }
 
-      h1 {
-        font-size: 28px;
-      }
+      h1 { font-size: 28px; }
 
-      .weekdays {
-        display: none;
-      }
+      .weekdays { display: none; }
 
-      .calendar {
-        display: block;
-      }
+      .calendar { display: block; }
 
       .day {
         height: auto;
@@ -274,20 +203,16 @@
         margin-bottom: 14px;
       }
 
-      .day.outside {
-        display: none;
-      }
+      .day.outside { display: none; }
 
       .day-number {
         font-size: 20px;
-        color: var(--yellow);
+        color: var(--purple-soft);
         border-bottom: 1px solid rgba(201,156,255,0.25);
         padding-bottom: 8px;
       }
 
-      .event {
-        font-size: 14px;
-      }
+      .event { font-size: 14px; }
 
       .footer-meta {
         flex-direction: column;
@@ -312,6 +237,9 @@
       <button onclick="goToday()">Today</button>
       <button onclick="nextMonth()">Next →</button>
       <input id="search" placeholder="Search approved events..." />
+      <select id="typeFilter">
+        <option value="">All activity types</option>
+      </select>
     </section>
 
     <div class="month-title" id="monthTitle"></div>
@@ -342,23 +270,40 @@
       const response = await fetch('./schedule.json?cache=' + Date.now());
       allEvents = await response.json();
 
+      populateTypeFilter();
+
       document.getElementById('updated').textContent =
         '↻ Last loaded: ' + new Date().toLocaleString();
 
       renderCalendar();
     }
 
+    function populateTypeFilter() {
+      const select = document.getElementById('typeFilter');
+      const currentValue = select.value;
+
+      select.innerHTML = '<option value="">All activity types</option>';
+
+      const types = [...new Set(
+        allEvents
+          .map(event => event.type)
+          .filter(Boolean)
+      )].sort();
+
+      types.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type;
+        select.appendChild(option);
+      });
+
+      select.value = currentValue;
+    }
+
     function dateKey(date) {
       return date.getFullYear() + '-' +
         String(date.getMonth() + 1).padStart(2, '0') + '-' +
         String(date.getDate()).padStart(2, '0');
-    }
-
-    function labelForCategory(category) {
-      if (category === 'weekly-upgrade') return 'Weekly Splice Upgrade';
-      if (category === 'minimum-version') return 'Minimum Splice Versions';
-      if (category === 'release') return 'Release';
-      return 'Event';
     }
 
     function appendDescription(parent, description) {
@@ -371,9 +316,6 @@
 
       lines.forEach(line => {
         const isNetwork =
-          /^DevNet:$/i.test(line) ||
-          /^TestNet:$/i.test(line) ||
-          /^MainNet:$/i.test(line) ||
           /^DevNet:\s*$/i.test(line) ||
           /^TestNet:\s*$/i.test(line) ||
           /^MainNet:\s*$/i.test(line);
@@ -405,11 +347,7 @@
 
     function renderEvent(event) {
       const eventDiv = document.createElement('div');
-      eventDiv.className = `event ${event.category || 'general'}`;
-
-      const badge = document.createElement('div');
-      badge.className = 'badge';
-      badge.textContent = labelForCategory(event.category);
+      eventDiv.className = 'event';
 
       const title = document.createElement('div');
       title.className = 'title';
@@ -425,7 +363,6 @@
         meta.appendChild(tag);
       });
 
-      eventDiv.appendChild(badge);
       eventDiv.appendChild(title);
 
       if (meta.children.length) {
@@ -442,6 +379,7 @@
     function renderCalendar() {
       const calendar = document.getElementById('calendar');
       const search = document.getElementById('search').value.toLowerCase();
+      const selectedType = document.getElementById('typeFilter').value;
 
       const year = currentDate.getFullYear();
       const month = currentDate.getMonth();
@@ -476,7 +414,9 @@
             event.status
           ].join(' ').toLowerCase();
 
-          return String(event.start || '') === key && searchable.includes(search);
+          return String(event.start || '') === key &&
+            searchable.includes(search) &&
+            (!selectedType || event.type === selectedType);
         });
 
         const day = document.createElement('div');
@@ -524,6 +464,7 @@
     }
 
     document.getElementById('search').addEventListener('input', renderCalendar);
+    document.getElementById('typeFilter').addEventListener('change', renderCalendar);
 
     loadSchedule();
   </script>
