@@ -1,55 +1,5 @@
 [
   {
-    "title": "DevNet: Dry-run of traffic-based app rewards begins",
-    "start": "2026-06-23",
-    "end": "2026-06-23",
-    "description": "",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "TestNet: Daml models from Splice 0.6.7 effective",
-    "start": "2026-06-23",
-    "end": "2026-06-23",
-    "description": "required for CIP-104",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "DevNet: Minimum Splice.dar Versions",
-    "start": "2026-06-23",
-    "end": "2026-06-23",
-    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
-    "title": "TestNet: Minimum Splice.dar Versions",
-    "start": "2026-06-23",
-    "end": "2026-06-23",
-    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
-    "title": "MainNet:Minimum Splice.dar Versions",
-    "start": "2026-06-23",
-    "end": "2026-06-23",
-    "description": "amulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
     "title": "Cut splice release 0.6.10",
     "start": "2026-06-25",
     "end": "2026-06-25",
@@ -86,7 +36,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -96,7 +46,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -106,7 +56,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -115,8 +65,8 @@
     "end": "2026-06-29",
     "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "",
-    "type": "",
+    "network": "All Networks",
+    "type": "Minimum Splice Versions",
     "category": "general"
   },
   {
@@ -126,7 +76,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -136,7 +86,7 @@
     "description": "required for CIP-104",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -145,8 +95,8 @@
     "end": "2026-06-30",
     "description": "DevNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "All Networks",
+    "type": "Minimum Splice Versions",
     "category": "general"
   },
   {
@@ -156,7 +106,7 @@
     "description": "",
     "status": "Approved",
     "network": "",
-    "type": "",
+    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -166,7 +116,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -176,7 +126,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -186,7 +136,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -195,8 +145,8 @@
     "end": "2026-07-06",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.7\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "All Networks",
+    "type": "Minimum Splice Versions",
     "category": "general"
   },
   {
@@ -206,7 +156,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -216,7 +166,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -226,7 +176,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -236,7 +186,7 @@
     "description": "Topology freeze starts July 7th, 24 hours before LSU",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -246,7 +196,7 @@
     "description": "",
     "status": "Approved",
     "network": "",
-    "type": "",
+    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -256,7 +206,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -266,7 +216,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -276,7 +226,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -286,7 +236,7 @@
     "description": "",
     "status": "Approved",
     "network": "",
-    "type": "",
+    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -296,7 +246,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -306,7 +256,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -316,7 +266,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -325,8 +275,8 @@
     "end": "2026-07-20",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "All Networks",
+    "type": "Minimum Splice Versions",
     "category": "general"
   },
   {
@@ -336,7 +286,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -346,7 +296,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -356,7 +306,7 @@
     "description": "Topology freeze starts July 21st, 24 hours before LSU",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -366,7 +316,7 @@
     "description": "",
     "status": "Approved",
     "network": "",
-    "type": "",
+    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -376,7 +326,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -386,7 +336,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -396,7 +346,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Minor Upgrades",
     "category": "general"
   },
   {
@@ -405,8 +355,8 @@
     "end": "2026-07-27",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.9 (To Be Confirmed)",
     "status": "Approved",
-    "network": "Minimum Versions",
-    "type": "",
+    "network": "All Networks",
+    "type": "Minimum Splice Versions",
     "category": "general"
   },
   {
@@ -416,7 +366,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Configuration Change",
     "category": "general"
   },
   {
@@ -426,7 +376,7 @@
     "description": "",
     "status": "Approved",
     "network": "",
-    "type": "",
+    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -436,7 +386,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -446,7 +396,7 @@
     "description": "Topology freeze starts August 7th, 24 hours before LSU",
     "status": "Approved",
     "network": "MainNet",
-    "type": "",
+    "type": "Protocol Upgrades (LSU)",
     "category": "general"
   },
   {
@@ -597,6 +547,56 @@
     "status": "Approved",
     "network": "MainNet",
     "type": "Minor Upgrades",
+    "category": "general"
+  },
+  {
+    "title": "MainNet:Minimum Splice.dar Versions",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "amulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "DevNet: Minimum Splice.dar Versions",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet: Minimum Splice.dar Versions",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet: Daml models from Splice 0.6.7 effective",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "required for CIP-104",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Configuration Change",
+    "category": "general"
+  },
+  {
+    "title": "DevNet: Dry-run of traffic-based app rewards begins",
+    "start": "2026-06-23",
+    "end": "2026-06-23",
+    "description": "",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Configuration Change",
     "category": "general"
   }
 ]
