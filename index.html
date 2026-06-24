@@ -134,6 +134,24 @@
       line-height: 1.4;
     }
 
+    .event.devnet {
+      background: rgba(37,99,235,0.28);
+      border-color: #2563eb;
+      border-left: 4px solid #2563eb;
+    }
+
+    .event.testnet {
+      background: rgba(234,88,12,0.28);
+      border-color: #ea580c;
+      border-left: 4px solid #ea580c;
+    }
+
+    .event.mainnet {
+      background: rgba(22,163,74,0.28);
+      border-color: #16a34a;
+      border-left: 4px solid #16a34a;
+    }
+
     .title {
       font-weight: 900;
       text-decoration: underline;
@@ -412,7 +430,17 @@
 
     function renderEvent(event) {
       const eventDiv = document.createElement('div');
-      eventDiv.className = 'event';
+      const network = normalizeNetwork(event.network);
+
+      if (network === 'DevNet') {
+        eventDiv.className = 'event devnet';
+      } else if (network === 'TestNet') {
+        eventDiv.className = 'event testnet';
+      } else if (network === 'MainNet') {
+        eventDiv.className = 'event mainnet';
+      } else {
+        eventDiv.className = 'event';
+      }
 
       const title = document.createElement('div');
       title.className = 'title';
@@ -420,8 +448,6 @@
 
       const meta = document.createElement('div');
       meta.className = 'meta-row';
-
-      const network = normalizeNetwork(event.network);
 
       if (network) {
         const tag = document.createElement('span');
