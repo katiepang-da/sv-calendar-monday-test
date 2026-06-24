@@ -180,21 +180,15 @@
 
     @media (max-width: 900px) {
       header { flex-direction: column; align-items: flex-start; }
-
       .controls { grid-template-columns: 1fr; }
-
       .day { height: 240px; }
-
       .event { font-size: 11px; }
     }
 
     @media (max-width: 700px) {
       body { padding: 18px 12px; }
-
       h1 { font-size: 28px; }
-
       .weekdays { display: none; }
-
       .calendar { display: block; }
 
       .day {
@@ -239,7 +233,7 @@
       <input id="search" placeholder="Search approved events..." />
 
       <select id="networkFilter">
-        <option value="">All networks</option>
+        <option value="">All Networks</option>
       </select>
 
       <select id="typeFilter">
@@ -284,19 +278,35 @@
       renderCalendar();
     }
 
+    function normalizeNetwork(network) {
+      const value = String(network || '').trim().toLowerCase();
+
+      if (value === 'dev net' || value === 'devnet') return 'DevNet';
+      if (value === 'testnet' || value === 'test net') return 'TestNet';
+      if (value === 'mainnet' || value === 'main net') return 'MainNet';
+      if (value === 'minimum versions' || value === 'minimum version') return 'Minimum Versions';
+
+      return String(network || '').trim();
+    }
+
     function populateNetworkFilter() {
       const select = document.getElementById('networkFilter');
       const currentValue = select.value;
 
-      select.innerHTML = '<option value="">All networks</option>';
+      const orderedNetworks = [
+        'DevNet',
+        'TestNet',
+        'MainNet',
+        'Minimum Versions'
+      ];
 
-      const networks = [...new Set(
-        allEvents
-          .map(event => event.network)
-          .filter(Boolean)
-      )].sort();
+      select.innerHTML = '<option value="">All Networks</option>';
 
-      networks.forEach(network => {
+      orderedNetworks.forEach(network => {
+        const exists = allEvents.some(event => normalizeNetwork(event.network) === network);
+
+        if (!exists) return;
+
         const option = document.createElement('option');
         option.value = network;
         option.textContent = network;
@@ -384,7 +394,7 @@
       const meta = document.createElement('div');
       meta.className = 'meta-row';
 
-      [event.network, event.type].filter(Boolean).forEach(value => {
+      [normalizeNetwork(event.network), event.type].filter(Boolean).forEach(value => {
         const tag = document.createElement('span');
         tag.className = 'tag';
         tag.textContent = value;
@@ -434,10 +444,12 @@
         const todayKey = dateKey(new Date());
 
         const dayEvents = allEvents.filter(event => {
+          const normalizedNetwork = normalizeNetwork(event.network);
+
           const searchable = [
             event.title,
             event.description,
-            event.network,
+            normalizedNetwork,
             event.type,
             event.category,
             event.status
@@ -445,7 +457,7 @@
 
           return String(event.start || '') === key &&
             searchable.includes(search) &&
-            (!selectedNetwork || event.network === selectedNetwork) &&
+            (!selectedNetwork || normalizedNetwork === selectedNetwork) &&
             (!selectedType || event.type === selectedType);
         });
 
