@@ -1,15 +1,5 @@
 [
   {
-    "title": "Cut splice release 0.6.10",
-    "start": "2026-06-25",
-    "end": "2026-06-25",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
-    "category": "general"
-  },
-  {
     "title": "MainNet Topology Freeze 9am",
     "start": "2026-06-26",
     "end": "2026-06-26",
@@ -597,6 +587,16 @@
     "status": "Approved",
     "network": "DevNet",
     "type": "Configuration Change",
+    "category": "general"
+  },
+  {
+    "title": "Cut splice release 0.6.10",
+    "start": "2026-06-25",
+    "end": "2026-06-25",
+    "description": "",
+    "status": "Approved",
+    "network": "",
+    "type": "Cut Splice Release",
     "category": "general"
   }
 ]
