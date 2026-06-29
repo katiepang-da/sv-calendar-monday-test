@@ -6,7 +6,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -16,7 +16,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -26,7 +26,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -35,7 +35,17 @@
     "end": "2026-06-29",
     "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "All Networks",
+    "network": "",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "DevNet: 0.6.7 - Minimum Splice Versions for Validators",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "TestNet: 0.6.7\nMainNet: 0.6.7",
+    "status": "Approved",
+    "network": "DevNet",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -65,18 +75,8 @@
     "end": "2026-06-30",
     "description": "DevNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
     "status": "Approved",
-    "network": "All Networks",
-    "type": "Minimum Splice Versions",
-    "category": "general"
-  },
-  {
-    "title": "Cut splice release 0.6.11",
-    "start": "2026-07-02",
-    "end": "2026-07-02",
-    "description": "",
-    "status": "Approved",
     "network": "",
-    "type": "Cut Splice Release",
+    "type": "Minimum Splice Dar versions",
     "category": "general"
   },
   {
@@ -86,7 +86,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -96,7 +96,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -106,7 +106,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -115,7 +115,7 @@
     "end": "2026-07-06",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.7\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "All Networks",
+    "network": "",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -160,23 +160,13 @@
     "category": "general"
   },
   {
-    "title": "Cut splice release 0.6.12",
-    "start": "2026-07-09",
-    "end": "2026-07-09",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
-    "category": "general"
-  },
-  {
     "title": "DevNet upgrades to Splice 0.6.12",
     "start": "2026-07-13",
     "end": "2026-07-13",
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -186,7 +176,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -196,17 +186,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
-    "category": "general"
-  },
-  {
-    "title": "Cut splice release 0.6.13",
-    "start": "2026-07-16",
-    "end": "2026-07-16",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -216,7 +196,7 @@
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -226,7 +206,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -236,7 +216,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -245,7 +225,7 @@
     "end": "2026-07-20",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.7",
     "status": "Approved",
-    "network": "All Networks",
+    "network": "",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -280,23 +260,13 @@
     "category": "general"
   },
   {
-    "title": "Cut splice release 0.6.14",
-    "start": "2026-07-23",
-    "end": "2026-07-23",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
-    "category": "general"
-  },
-  {
     "title": "DevNet upgrades to Splice 0.6.14",
     "start": "2026-07-27",
     "end": "2026-07-27",
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -306,7 +276,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -316,7 +286,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -325,7 +295,7 @@
     "end": "2026-07-27",
     "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.9 (To Be Confirmed)",
     "status": "Approved",
-    "network": "All Networks",
+    "network": "",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -337,16 +307,6 @@
     "status": "Approved",
     "network": "MainNet",
     "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "Cut splice release 0.6.15",
-    "start": "2026-07-30",
-    "end": "2026-07-30",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
     "category": "general"
   },
   {
@@ -375,7 +335,7 @@
     "end": "2026-06-15",
     "description": "DevNet: 0.6.7\nTestNet: 0.6.5\nMainNet: 0.6.5",
     "status": "Approved",
-    "network": "Minimum Versions",
+    "network": "",
     "type": "",
     "category": "general"
   },
@@ -435,7 +395,7 @@
     "end": "2026-06-16",
     "description": "Splice .dars: \nDevNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18\n\nMainNet:\namulet 0.1.18\namuletNameService 0.1.19\ndsoGovernance 0.1.24\nvalidatorLifecycle 0.1.7\nwallet 0.1.19\nwalletPayments 0.1.18",
     "status": "Approved",
-    "network": "Minimum Versions",
+    "network": "",
     "type": "",
     "category": "general"
   },
@@ -450,23 +410,13 @@
     "category": "general"
   },
   {
-    "title": "Cut splice release 0.6.9",
-    "start": "2026-06-18",
-    "end": "2026-06-18",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
-    "category": "general"
-  },
-  {
     "title": "DevNet upgrades to Splice 0.6.9",
     "start": "2026-06-22",
     "end": "2026-06-22",
     "description": "",
     "status": "Approved",
     "network": "DevNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -506,7 +456,7 @@
     "description": "",
     "status": "Approved",
     "network": "TestNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -516,7 +466,7 @@
     "description": "",
     "status": "Approved",
     "network": "MainNet",
-    "type": "Minor Upgrades",
+    "type": "Weekly Upgrades",
     "category": "general"
   },
   {
@@ -567,16 +517,6 @@
     "status": "Approved",
     "network": "DevNet",
     "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "Cut splice release 0.6.10",
-    "start": "2026-06-25",
-    "end": "2026-06-25",
-    "description": "",
-    "status": "Approved",
-    "network": "",
-    "type": "Cut Splice Release",
     "category": "general"
   },
   {
