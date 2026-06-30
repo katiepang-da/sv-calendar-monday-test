@@ -1,55 +1,5 @@
 [
   {
-    "title": "DevNet upgrades to Splice 0.6.10",
-    "start": "2026-06-29",
-    "end": "2026-06-29",
-    "description": "",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Weekly Upgrades",
-    "category": "general"
-  },
-  {
-    "title": "TestNet upgrades to Splice 0.6.9",
-    "start": "2026-06-29",
-    "end": "2026-06-29",
-    "description": "",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Weekly Upgrades",
-    "category": "general"
-  },
-  {
-    "title": "MainNet upgrades to Splice 0.6.8",
-    "start": "2026-06-29",
-    "end": "2026-06-29",
-    "description": "",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Weekly Upgrades",
-    "category": "general"
-  },
-  {
-    "title": "Minimum Splice Versions for Validators",
-    "start": "2026-06-29",
-    "end": "2026-06-29",
-    "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.7",
-    "status": "Approved",
-    "network": "",
-    "type": "Minimum Splice Versions",
-    "category": "general"
-  },
-  {
-    "title": "DevNet: 0.6.7 - Minimum Splice Versions for Validators",
-    "start": "2026-06-29",
-    "end": "2026-06-29",
-    "description": "TestNet: 0.6.7\nMainNet: 0.6.7",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Minimum Splice Versions",
-    "category": "general"
-  },
-  {
     "title": "TestNet: Dry-run of traffic-based app rewards begins",
     "start": "2026-06-30",
     "end": "2026-06-30",
@@ -537,6 +487,56 @@
     "status": "Approved",
     "network": "MainNet",
     "type": "Protocol Upgrades (LSU)",
+    "category": "general"
+  },
+  {
+    "title": "DevNet upgrades to Splice 0.6.10",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Weekly Upgrades",
+    "category": "general"
+  },
+  {
+    "title": "Minimum Splice Versions for Validators",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "DevNet: 0.6.7\nTestNet: 0.6.7\nMainNet: 0.6.7",
+    "status": "Approved",
+    "network": "",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "DevNet: 0.6.7 - Minimum Splice Versions for Validators",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "TestNet: 0.6.7\nMainNet: 0.6.7",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "MainNet upgrades to Splice 0.6.8",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Weekly Upgrades",
+    "category": "general"
+  },
+  {
+    "title": "TestNet upgrades to Splice 0.6.9",
+    "start": "2026-06-29",
+    "end": "2026-06-29",
+    "description": "",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Weekly Upgrades",
     "category": "general"
   }
 ]
