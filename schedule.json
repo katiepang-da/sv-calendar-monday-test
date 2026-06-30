@@ -20,12 +20,32 @@
     "category": "general"
   },
   {
-    "title": "Minimum Splice.dar Versions",
+    "title": "Dev Net - Minimum Splice.dar Versions",
     "start": "2026-06-30",
     "end": "2026-06-30",
-    "description": "DevNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
     "status": "Approved",
-    "network": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "Main Net - Minimum Splice.dar Versions",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "Test Net- Minimum Splice.dar Versions",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "TestNet",
     "type": "Minimum Splice Dar versions",
     "category": "general"
   },
@@ -60,12 +80,32 @@
     "category": "general"
   },
   {
-    "title": "Minimum Splice Versions for Validators",
+    "title": "DevNet - Minimum Splice Versions for Validators",
     "start": "2026-07-06",
     "end": "2026-07-06",
-    "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.7\nMainNet: 0.6.7",
+    "description": "DevNet: 0.6.9 (To Be Confirmed)",
     "status": "Approved",
-    "network": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-06",
+    "end": "2026-07-06",
+    "description": "TestNet: 0.6.7",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "MainNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-06",
+    "end": "2026-07-06",
+    "description": "MainNet: 0.6.7",
+    "status": "Approved",
+    "network": "MainNet",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -170,12 +210,32 @@
     "category": "general"
   },
   {
-    "title": "Minimum Splice Versions for Validators",
+    "title": "DevNet - Minimum Splice Versions for Validators",
     "start": "2026-07-20",
     "end": "2026-07-20",
-    "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.7",
+    "description": "DevNet: 0.6.9 (To Be Confirmed)",
     "status": "Approved",
-    "network": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-20",
+    "end": "2026-07-20",
+    "description": "TestNet: 0.6.9 (To Be Confirmed)",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "MainNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-20",
+    "end": "2026-07-20",
+    "description": "MainNet: 0.6.7",
+    "status": "Approved",
+    "network": "MainNet",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
@@ -240,12 +300,32 @@
     "category": "general"
   },
   {
-    "title": "Minimum Splice Versions for Validators",
+    "title": "DevNet - Minimum Splice Versions for Validators",
     "start": "2026-07-27",
     "end": "2026-07-27",
-    "description": "DevNet: 0.6.9 (To Be Confirmed)\nTestNet: 0.6.9 (To Be Confirmed)\nMainNet: 0.6.9 (To Be Confirmed)",
+    "description": "DevNet: 0.6.9 (To Be Confirmed)",
     "status": "Approved",
-    "network": "",
+    "network": "DevNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-27",
+    "end": "2026-07-27",
+    "description": "TestNet: 0.6.9 (To Be Confirmed)",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Versions",
+    "category": "general"
+  },
+  {
+    "title": "MainNet - Minimum Splice Versions for Validators",
+    "start": "2026-07-27",
+    "end": "2026-07-27",
+    "description": "MainNet: 0.6.9 (To Be Confirmed)",
+    "status": "Approved",
+    "network": "MainNet",
     "type": "Minimum Splice Versions",
     "category": "general"
   },
