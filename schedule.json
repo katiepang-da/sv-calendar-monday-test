@@ -1,55 +1,5 @@
 [
   {
-    "title": "TestNet: Dry-run of traffic-based app rewards begins",
-    "start": "2026-06-30",
-    "end": "2026-06-30",
-    "description": "",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "MainNet: Daml models from Splice 0.6.7 effective",
-    "start": "2026-06-30",
-    "end": "2026-06-30",
-    "description": "required for CIP-104",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Configuration Change",
-    "category": "general"
-  },
-  {
-    "title": "Dev Net - Minimum Splice.dar Versions",
-    "start": "2026-06-30",
-    "end": "2026-06-30",
-    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
-    "status": "Approved",
-    "network": "DevNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
-    "title": "Main Net - Minimum Splice.dar Versions",
-    "start": "2026-06-30",
-    "end": "2026-06-30",
-    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
-    "status": "Approved",
-    "network": "MainNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
-    "title": "Test Net- Minimum Splice.dar Versions",
-    "start": "2026-06-30",
-    "end": "2026-06-30",
-    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Minimum Splice Dar versions",
-    "category": "general"
-  },
-  {
     "title": "DevNet upgrades to Splice 0.6.11",
     "start": "2026-07-06",
     "end": "2026-07-06",
@@ -617,6 +567,56 @@
     "status": "Approved",
     "network": "TestNet",
     "type": "Weekly Upgrades",
+    "category": "general"
+  },
+  {
+    "title": "Main Net - Minimum Splice.dar Versions",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "Dev Net - Minimum Splice.dar Versions",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nTestNet: \namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19\n\nMainNet:\namulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "DevNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "MainNet: Daml models from Splice 0.6.7 effective",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "required for CIP-104",
+    "status": "Approved",
+    "network": "MainNet",
+    "type": "Configuration Change",
+    "category": "general"
+  },
+  {
+    "title": "Test Net- Minimum Splice.dar Versions",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "amulet 0.1.19\namuletNameService 0.1.20\ndsoGovernance 0.1.25\nvalidatorLifecycle 0.1.7\nwallet 0.1.20\nwalletPayments 0.1.19",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Minimum Splice Dar versions",
+    "category": "general"
+  },
+  {
+    "title": "TestNet: Dry-run of traffic-based app rewards begins",
+    "start": "2026-06-30",
+    "end": "2026-06-30",
+    "description": "",
+    "status": "Approved",
+    "network": "TestNet",
+    "type": "Configuration Change",
     "category": "general"
   }
 ]
