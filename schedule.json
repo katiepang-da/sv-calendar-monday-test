@@ -310,16 +310,6 @@
     "category": "general"
   },
   {
-    "title": "New Event",
-    "start": "2026-07-15",
-    "end": "2026-07-15",
-    "description": "details",
-    "status": "Approved",
-    "network": "TestNet",
-    "type": "Weekly Upgrades",
-    "category": "general"
-  },
-  {
     "title": "Minimum Splice Versions for Validators",
     "start": "2026-06-15",
     "end": "2026-06-15",
