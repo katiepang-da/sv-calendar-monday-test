@@ -51,6 +51,32 @@
       white-space: nowrap;
     }
 
+    .list-view-btn {
+      border: 1px solid var(--purple);
+      color: var(--purple-soft);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      white-space: nowrap;
+      cursor: pointer;
+      background: rgba(124,77,255,0.1);
+    }
+
+    .list-view-btn.active {
+      background: var(--purple);
+      color: #fff;
+    }
+
+    .list-view-btn:hover {
+      background: rgba(124,77,255,0.2);
+    }
+
+    .header-right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
     .controls {
       display: flex;
       flex-direction: column;
@@ -66,7 +92,6 @@
       display: flex;
       gap: 10px;
       align-items: center;
-      flex-wrap: wrap;
     }
 
     .controls-row #search {
@@ -85,10 +110,13 @@
       gap: 10px;
     }
 
+    .controls-row:first-child {
+      justify-content: space-between;
+    }
+
     .view-toggle {
       display: flex;
       gap: 4px;
-      margin-left: auto;
     }
 
     .view-btn {
@@ -363,7 +391,8 @@
     }
 
     .week-view .day {
-      height: 500px;
+      height: auto;
+      min-height: 300px;
     }
 
     .week-view .weekday {
@@ -407,7 +436,189 @@
       font-size: 12px;
     }
 
+    .connection-tag {
+      background: rgba(124,77,255,0.25);
+      border-color: var(--purple) !important;
+      color: var(--purple-soft);
+      font-weight: 800;
+    }
+
+    .connected-event {
+      border: 1px solid rgba(124,77,255,0.3);
+      border-radius: 12px;
+      padding: 12px;
+      margin: 8px 0 12px 16px;
+      opacity: 0.85;
+      background: rgba(124,77,255,0.06);
+    }
+
+    .connected-event .title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .connected-event .meta-row {
+      margin-bottom: 8px;
+    }
+
+    .connected-event .view-btn {
+      font-size: 13px;
+      padding: 6px 12px;
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+
+    .connected-event .view-btn:hover {
+      opacity: 0.85;
+    }
+
+    .connected-divider {
+      height: 1px;
+      background: linear-gradient(90deg, rgba(124,77,255,0.4), transparent);
+      margin: 8px 0 8px 16px;
+    }
+
+    .connected-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 6px 16px;
+      font-weight: 600;
+    }
+
+    .list-view-container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .mini-calendar {
+      position: sticky;
+      top: 20px;
+      min-width: 400px;
+      max-width: 400px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, rgba(27,16,54,0.95), rgba(8,8,18,0.95));
+    }
+
+    .mini-calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .mini-calendar-header .month-label {
+      font-weight: 900;
+      font-size: 17px;
+      color: var(--purple-soft);
+    }
+
+    .mini-calendar-header button {
+      padding: 6px 10px;
+      font-size: 15px;
+      border-radius: 8px;
+      line-height: 1;
+    }
+
+    .mini-weekdays,
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 4px;
+    }
+
+    .mini-weekdays {
+      margin-bottom: 8px;
+    }
+
+    .mini-weekday {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      padding: 4px 0;
+    }
+
+    .mini-day {
+      text-align: center;
+      font-size: 15px;
+      padding: 8px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    .mini-day:hover {
+      background: rgba(124,77,255,0.2);
+    }
+
+    .mini-day.outside {
+      opacity: 0.25;
+    }
+
+    .mini-day.today {
+      background: var(--purple);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .mini-day.active {
+      background: rgba(124,77,255,0.3);
+      font-weight: 700;
+    }
+
+    .list-event-container {
+      flex: 1;
+      min-width: 0;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .list-event-container::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .list-event-container::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .list-event-container::-webkit-scrollbar-thumb {
+      background: rgba(124,77,255,0.3);
+      border-radius: 3px;
+    }
+
+    .list-day-header {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--purple-soft);
+      margin: 20px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(201,156,255,0.15);
+    }
+
+    .list-day-header:first-of-type {
+      margin-top: 0;
+    }
+
+    .list-sentinel {
+      height: 1px;
+    }
+
     @media (max-width: 900px) {
+      .list-view-container {
+        flex-direction: column;
+      }
+      .mini-calendar {
+        position: static;
+        min-width: 0;
+        max-width: none;
+        width: 100%;
+      }
       header { flex-direction: column; align-items: flex-start; }
       .controls-row { flex-direction: column; align-items: stretch; }
       .controls-row #search { min-width: 0; }
@@ -456,7 +667,10 @@
         <h1>SV Operations Schedule</h1>
         <div class="subtitle">Approved schedule items published from monday.com.</div>
       </div>
-      <div class="source-pill">Source: monday.com approved items</div>
+      <div class="header-right">
+        <div class="source-pill">Source: monday.com approved items</div>
+        <button class="list-view-btn" id="listViewBtn" onclick="toggleListView()">List view</button>
+      </div>
     </header>
 
     <section class="controls">
@@ -513,11 +727,13 @@
     let allEvents = [];
     let currentDate = new Date();
     let currentView = 'month';
+    let listObserver = null;
 
     async function loadSchedule() {
       const response = await fetch('./schedule.json?cache=' + Date.now());
       allEvents = await response.json();
 
+      buildConnections();
       populateNetworkFilter();
       populateTypeFilter();
 
@@ -525,6 +741,34 @@
         '↻ Last loaded: ' + new Date().toLocaleString();
 
       renderCalendar();
+    }
+
+    function buildConnections() {
+      const freezeEvents = allEvents.filter(e =>
+        (e.title || '').toLowerCase().includes('topology freeze')
+      );
+      const lsuEvents = allEvents.filter(e =>
+        e.type === 'Protocol Upgrades (LSU)' &&
+        !(e.title || '').toLowerCase().includes('topology freeze')
+      );
+
+      freezeEvents.forEach(freeze => {
+        const freezeDate = (freeze.start || '').split(' ')[0];
+        if (!freezeDate) return;
+        const d = new Date(freezeDate + 'T00:00:00');
+        d.setDate(d.getDate() + 1);
+        const nextDay = dateKey(d);
+
+        const lsu = lsuEvents.find(e => {
+          const eDate = (e.start || '').split(' ')[0];
+          return eDate === nextDay && normalizeNetwork(e.network) === normalizeNetwork(freeze.network);
+        });
+
+        if (lsu) {
+          freeze._connection = { target: lsu, type: 'freeze' };
+          lsu._connection = { target: freeze, type: 'lsu' };
+        }
+      });
     }
 
     function normalizeNetwork(network) {
@@ -629,6 +873,15 @@
       return `${h12}:${String(m).padStart(2, '0')} ${ampm}`;
     }
 
+    function extractTitleTime(title) {
+      if (!title) return '';
+      const m1 = title.match(/\b(\d{1,2}(:\d{2})?\s*(am|pm|AM|PM))\b/);
+      if (m1) return m1[1];
+      const m2 = title.match(/\b(\d{4}\s+(UTC|utc))\b/);
+      if (m2) return m2[1];
+      return '';
+    }
+
     function appendDescription(parent, description) {
       const lines = String(description || '')
         .split(/\r?\n|\r/)
@@ -684,7 +937,13 @@
 
       const title = document.createElement('div');
       title.className = 'title';
-      title.textContent = event.title || 'Untitled event';
+      if (event._connection) {
+        const arrow = document.createElement('span');
+        arrow.textContent = event._connection.type === 'freeze' ? '→ ' : '← ';
+        arrow.style.cssText = 'color: var(--purple); font-size: 12px; margin-right: 2px;';
+        title.appendChild(arrow);
+      }
+      title.append(event.title || 'Untitled event');
 
       const meta = document.createElement('div');
       meta.className = 'meta-row';
@@ -697,9 +956,10 @@
         tag.textContent = formatTime(startTime) + ' - ' + formatTime(endTime);
         meta.appendChild(tag);
       } else {
+        const titleTime = extractTitleTime(event.title);
         const tag = document.createElement('span');
         tag.className = 'tag';
-        tag.textContent = 'All day';
+        tag.textContent = titleTime || 'All day';
         meta.appendChild(tag);
       }
 
@@ -709,6 +969,17 @@
 
         tag.className = colorClass ? `tag ${colorClass}` : 'tag';
         tag.textContent = network;
+        meta.appendChild(tag);
+      }
+
+      if (event._connection) {
+        const targetDate = new Date((event._connection.target.start || '').split(' ')[0]);
+        const dateStr = targetDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        const tag = document.createElement('span');
+        tag.className = 'tag connection-tag';
+        tag.textContent = event._connection.type === 'freeze'
+          ? '→ LSU ' + dateStr
+          : '← Freeze ' + dateStr;
         meta.appendChild(tag);
       }
 
@@ -759,6 +1030,8 @@
       } else if (currentView === 'week') {
         const monday = getMonday(currentDate);
         el.textContent = 'Week of ' + monday.toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
+      } else if (currentView === 'list') {
+        el.textContent = 'From ' + currentDate.toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
       } else {
         el.textContent = currentDate.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
       }
@@ -789,12 +1062,13 @@
     function renderCalendar() {
       if (currentView === 'month') renderMonthView();
       else if (currentView === 'week') renderWeekView();
-      else renderDayView();
+      else if (currentView === 'day') renderDayView();
+      else renderListView();
     }
 
     function updateWeekdayHeaders() {
       const container = document.querySelector('.weekdays');
-      if (currentView === 'day' || window.innerWidth <= 700) {
+      if (currentView === 'day' || currentView === 'list' || window.innerWidth <= 700) {
         container.style.display = 'none';
         return;
       }
@@ -954,10 +1228,235 @@
         header.className = 'type-header';
         header.textContent = type;
         day.appendChild(header);
-        groups.get(type).forEach(event => day.appendChild(renderEvent(event)));
+        groups.get(type).forEach(event => {
+          day.appendChild(renderEvent(event));
+
+          if (event._connection) {
+            renderConnectedSubView(day, event);
+          }
+        });
       });
 
       calendar.appendChild(day);
+    }
+
+    function renderListView() {
+      const calendar = document.getElementById('calendar');
+      calendar.className = 'list-view-container';
+      calendar.innerHTML = '';
+
+      updateViewTitle();
+      updateWeekdayHeaders();
+
+      const miniCal = document.createElement('div');
+      miniCal.className = 'mini-calendar';
+      calendar.appendChild(miniCal);
+
+      const listContainer = document.createElement('div');
+      listContainer.className = 'list-event-container';
+      calendar.appendChild(listContainer);
+
+      renderMiniCalendar(miniCal);
+      renderEventList(listContainer, true);
+
+      listContainer.onscroll = () => {
+        if (listContainer.scrollTop + listContainer.clientHeight >= listContainer.scrollHeight - 300) {
+          renderEventList(listContainer, false);
+        }
+      };
+    }
+
+    function renderMiniCalendar(container) {
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+
+      const header = document.createElement('div');
+      header.className = 'mini-calendar-header';
+
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = '←';
+      prevBtn.onclick = (e) => { e.stopPropagation(); currentDate.setMonth(month - 1); renderListView(); };
+      header.appendChild(prevBtn);
+
+      const label = document.createElement('span');
+      label.className = 'month-label';
+      label.textContent = new Date(year, month).toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+      header.appendChild(label);
+
+      const nextBtn = document.createElement('button');
+      nextBtn.textContent = '→';
+      nextBtn.onclick = (e) => { e.stopPropagation(); currentDate.setMonth(month + 1); renderListView(); };
+      header.appendChild(nextBtn);
+
+      container.appendChild(header);
+
+      const weekdays = document.createElement('div');
+      weekdays.className = 'mini-weekdays';
+      ['M', 'T', 'W', 'T', 'F', 'S', 'S'].forEach(d => {
+        const el = document.createElement('div');
+        el.className = 'mini-weekday';
+        el.textContent = d;
+        weekdays.appendChild(el);
+      });
+      container.appendChild(weekdays);
+
+      const grid = document.createElement('div');
+      grid.className = 'mini-grid';
+
+      const firstDay = new Date(year, month, 1);
+      let monOffset = firstDay.getDay() - 1;
+      if (monOffset < 0) monOffset = 6;
+      const gridStart = new Date(firstDay);
+      gridStart.setDate(firstDay.getDate() - monOffset);
+
+      const todayKey = dateKey(new Date());
+      const activeKey = dateKey(currentDate);
+
+      for (let i = 0; i < 35; i++) {
+        const d = new Date(gridStart);
+        d.setDate(gridStart.getDate() + i);
+        const key = dateKey(d);
+        const el = document.createElement('div');
+        el.className = 'mini-day';
+        if (d.getMonth() !== month) el.classList.add('outside');
+        if (key === todayKey) el.classList.add('today');
+        if (key === activeKey) el.classList.add('active');
+        el.textContent = d.getDate();
+        el.onclick = () => { currentDate = new Date(d); renderListView(); };
+        grid.appendChild(el);
+      }
+
+      container.appendChild(grid);
+    }
+
+    let listLoading = false;
+
+    function renderEventList(container, reset) {
+      if (reset) {
+        container.innerHTML = '';
+        listLoading = false;
+      }
+
+      if (listLoading) return;
+      listLoading = true;
+
+      const filtered = getFilteredEvents();
+      const batchSize = 14;
+      const existingDays = container.querySelectorAll('.list-day-header').length;
+      const startOffset = reset ? 0 : existingDays;
+      const todayKey = dateKey(new Date());
+
+      container.querySelectorAll('.list-sentinel').forEach(el => el.remove());
+
+      const startDate = new Date(currentDate);
+      startDate.setDate(startDate.getDate() + startOffset);
+
+      for (let i = 0; i < batchSize; i++) {
+        const d = new Date(startDate);
+        d.setDate(startDate.getDate() + i);
+        const key = dateKey(d);
+
+        const dayEvents = filtered.filter(event => (event.start || '').split(' ')[0] === key);
+
+        const header = document.createElement('div');
+        header.className = 'list-day-header';
+        const isToday = key === todayKey;
+        header.textContent = isToday
+          ? d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }) + ' — Today'
+          : d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+        container.appendChild(header);
+
+        if (!dayEvents.length) {
+          const empty = document.createElement('div');
+          empty.style.cssText = 'color: var(--muted); padding: 8px 0 16px; font-size: 13px;';
+          empty.textContent = 'No events scheduled.';
+          container.appendChild(empty);
+        } else {
+          const allDay = dayEvents.filter(e => !eventHasTime(e));
+          const timed = dayEvents.filter(e => eventHasTime(e));
+          timed.sort((a, b) => eventTime(a).localeCompare(eventTime(b)));
+          [...allDay, ...timed].forEach(event => {
+            container.appendChild(renderEvent(event));
+            if (event._connection) {
+              renderConnectedSubView(container, event);
+            }
+          });
+        }
+      }
+
+      const sentinel = document.createElement('div');
+      sentinel.className = 'list-sentinel';
+      container.appendChild(sentinel);
+
+      listLoading = false;
+    }
+
+    function renderConnectedSubView(container, event) {
+      const target = event._connection.target;
+      const targetDate = (target.start || '').split(' ')[0];
+      const dateObj = new Date(targetDate + 'T00:00:00');
+      const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+
+      const label = document.createElement('div');
+      label.className = 'connected-label';
+      label.textContent = '↔ Connected';
+      container.appendChild(label);
+
+      const divider = document.createElement('div');
+      divider.className = 'connected-divider';
+      container.appendChild(divider);
+
+      const card = document.createElement('div');
+      card.className = 'connected-event';
+
+      const title = document.createElement('div');
+      title.className = 'title';
+      title.textContent = target.title || 'Untitled event';
+      card.appendChild(title);
+
+      const meta = document.createElement('div');
+      meta.className = 'meta-row';
+
+      if (eventHasTime(target)) {
+        const st = eventTime(target);
+        const et = eventEndTime(target) || '23:59';
+        const tag = document.createElement('span');
+        tag.className = 'tag';
+        tag.textContent = formatTime(st) + ' - ' + formatTime(et);
+        meta.appendChild(tag);
+      } else {
+        const tt = extractTitleTime(target.title);
+        const tag = document.createElement('span');
+        tag.className = 'tag';
+        tag.textContent = tt || 'All day';
+        meta.appendChild(tag);
+      }
+
+      const network = normalizeNetwork(target.network);
+      if (network) {
+        const tag = document.createElement('span');
+        const cc = networkClass(network);
+        tag.className = cc ? `tag ${cc}` : 'tag';
+        tag.textContent = network;
+        meta.appendChild(tag);
+      }
+
+      if (target.type) {
+        const tag = document.createElement('span');
+        tag.className = 'tag';
+        tag.textContent = target.type;
+        meta.appendChild(tag);
+      }
+
+      card.appendChild(meta);
+
+      const btn = document.createElement('button');
+      btn.className = 'view-btn';
+      btn.textContent = 'View on ' + dateStr + ' →';
+      btn.onclick = () => goToDayView(targetDate);
+      card.appendChild(btn);
+
+      container.appendChild(card);
     }
 
     function goToDayView(dateStr) {
@@ -970,7 +1469,7 @@
     }
 
     function prev() {
-      if (currentView === 'month') {
+      if (currentView === 'month' || currentView === 'list') {
         currentDate.setMonth(currentDate.getMonth() - 1);
       } else if (currentView === 'week') {
         currentDate.setDate(currentDate.getDate() - 7);
@@ -981,7 +1480,7 @@
     }
 
     function next() {
-      if (currentView === 'month') {
+      if (currentView === 'month' || currentView === 'list') {
         currentDate.setMonth(currentDate.getMonth() + 1);
       } else if (currentView === 'week') {
         currentDate.setDate(currentDate.getDate() + 7);
@@ -1056,6 +1555,15 @@
       document.removeEventListener('keydown', handleEscape);
     }
 
+    function toggleListView() {
+      const btn = document.getElementById('listViewBtn');
+      if (currentView === 'list') return;
+      currentView = 'list';
+      document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderCalendar();
+    }
+
     function handleEscape(e) {
       if (e.key === 'Escape') hideTypeInfo();
     }
@@ -1069,6 +1577,7 @@
       if (!btn || btn.dataset.view === currentView) return;
 
       document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('listViewBtn').classList.remove('active');
       btn.classList.add('active');
 
       currentView = btn.dataset.view;
