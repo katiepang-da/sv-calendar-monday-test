@@ -202,9 +202,14 @@
       border-left: 4px solid #16a34a;
     }
 
+    .event-separator {
+      height: 1px;
+      background: rgba(201,156,255,0.2);
+      margin: 14px 0 10px;
+    }
+
     .title {
       font-weight: 900;
-      text-decoration: underline;
       margin-bottom: 6px;
     }
 
@@ -727,6 +732,26 @@
       return eventDiv;
     }
 
+    function renderGroupedEvents(container, events) {
+      const groups = new Map();
+      events.forEach(event => {
+        const type = event.type || 'General';
+        if (!groups.has(type)) groups.set(type, []);
+        groups.get(type).push(event);
+      });
+
+      let first = true;
+      for (const [, group] of groups) {
+        if (!first) {
+          const sep = document.createElement('div');
+          sep.className = 'event-separator';
+          container.appendChild(sep);
+        }
+        first = false;
+        group.forEach(event => container.appendChild(renderEvent(event)));
+      }
+    }
+
     function updateViewTitle() {
       const el = document.getElementById('monthTitle');
       if (currentView === 'month') {
@@ -833,7 +858,7 @@
           : dayDate.getDate();
 
         day.innerHTML = `<div class="day-number">${dayLabel}</div>`;
-        dayEvents.forEach(event => day.appendChild(renderEvent(event)));
+        renderGroupedEvents(day, dayEvents);
         calendar.appendChild(day);
       }
     }
@@ -868,7 +893,7 @@
           : dayDate.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric' });
 
         day.innerHTML = `<div class="day-number">${dayLabel}</div>`;
-        dayEvents.forEach(event => day.appendChild(renderEvent(event)));
+        renderGroupedEvents(day, dayEvents);
         calendar.appendChild(day);
       }
     }
